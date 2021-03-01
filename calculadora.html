@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>TecBlog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="TecBlog">
+        <meta name="keywords" content="">
+        <meta name="author" content="Lucas">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="img/logo/logo.ico">
+        <link rel="stylesheet" href="css/calc.css">
+    </head>
+    <body>
+        <div class="cabecalho">
+            
+            <div class="LOGO"> 
+                <a href="index.html"><h1>Tec<span class="LOGO-COLOR">Blog</span></h1></a>
+            </div>  <!--## FIM LOGO ##-->
+
+            <div class="black-bg"></div>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="menu-desktop">
+
+                <nav class="menu">
+
+                    
+                
+                    <ul>
+                        <li><a href="index.html" class="link-visited">Inicio</a></li>
+                        <li><a href="#" class='jogos-btn'>Jogos <i class='fas fa-sort-down'></i></a>
+                            <ul class='jogos-hidden'>
+                                <li><a href="jogos.html">Todos</a></li>
+                                <li><a href="deathstranding.html">Death Stranding</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#c" class='eletro-btn'>Celulares<i class='fas fa-sort-down'></i></a>
+                            <ul class='eletro-hidden'>
+                                <li><a href="#">Todos</a></li>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">Xiaomi</a></li>
+                                <li><a href="#">Motorola</a></li>
+                                <li><a href="#">IOS</a></li>
+                                <li><a href="#">LG</a></li>
+                            </ul>
+                        </li> 
+                        <li><a href="calculadora.html">Calculadora</a></li> 
+                        
+                    </ul>
+
+                </nav><!--## MENU ##-->
+               
+            </div>  <!--## FIM MENU DESKTOP ##-->
+
+        </div>  <!--## FIM CABEÇALHO ##-->
+
+                <!--## CONTAINER PRINCIPAL ##-->
+        <div class="container-principal">
+
+                <!--## CONTAINER POSTAGEM ##-->
+            <div class="container-postagem">
+
+                            <!--## POSTAGENS ##-->
+                
+
+                <div class="conteudo-postagem calc">
+
+                    <h2>Minha Calculadora</h2>
+                    
+                    <div class="calculadora-container">
+
+                        <h4>Luskas</h4>
+
+                        <div class="painel">
+                            <input type="text" id="resultado" placeholder="0" disabled>
+                        </div><!--## PAINEL ##-->
+                        <table class="calculadora">
+                            <tr>
+                                <td><div class="btn" onclick="Limpar(), playClick()"><div class="btn-inside">C</div></div></td>
+                                <td><div class="btn" onclick="Disk('/'), playClick()" ><div class="btn-inside">/</div></div></td>
+                                <td><div class="btn" onclick="Disk('*'), playClick()"><div class="btn-inside">*</div></div></td>
+                                <td><div class="btn" onclick="Disk('-'), playClick()"><div class="btn-inside">-</div></div></td>
+                            </tr>
+
+                            <tr>
+                                <td><div class="btn" onclick="Disk('7'), playClick()"><div class="btn-inside">7</div></div></td>
+                                <td><div class="btn" onclick="Disk('8'), playClick()"><div class="btn-inside">8</div></div></td>
+                                <td><div class="btn" onclick="Disk('9'), playClick()"><div class="btn-inside">9</div></div></td>
+                                <td><div class="btn" onclick="Disk('+'), playClick()"><div class="btn-inside">+</div></div></td>
+                            </tr>
+
+                            <tr>
+                                <td><div class="btn" onclick="Disk('4'), playClick()"><div class="btn-inside">4</div></div></td>
+                                <td><div class="btn" onclick="Disk('5'), playClick()"><div class="btn-inside">5</div></div></td>
+                                <td><div class="btn" onclick="Disk('6'), playClick()"><div class="btn-inside">6</div></div></td>
+                                <td><div class="btn" onclick="Disk('.'), playClick()"><div class="btn-inside">.</div></div></td>
+                            </tr>
+
+                            <tr>
+                                <td><div class="btn" onclick="Disk('1'), playClick()"><div class="btn-inside">1</div></div></td>
+                                <td><div class="btn" onclick="Disk('2'), playClick()"><div class="btn-inside">2</div></div></td>
+                                <td><div class="btn" onclick="Disk('3'), playClick()"><div class="btn-inside">3</div></div></td>
+                                <td rowspan="2"><div class="btn btn-enter" onclick="result(), playClick()"><div class="btn-inside">=</div></div></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3"><div class="btn btn-0" onclick="Disk('0'), playClick()"><div class="btn-inside">0</div></div></td>
+                                
+                            </tr>
+                        </table>
+
+                        
+                    </div><!--## CALCULADORA ##-->
+                </div><!--## CONTEUDO POSTAGEM ##-->
+
+                
+
+            </div><!--## CONTAINER POSTAGEM ##-->
+                    
+            <div class="theme_btn">
+                <div class="dark_theme_btn">
+                    <i class="fas fa-moon"></i>
+                </div><!--## dark theme ##-->
+    
+                <div class="light_theme_btn">
+                    <i class="fas fa-sun"></i>
+                </div><!--## dark theme ##-->
+            </div><!--## THEME BTN ##-->
+
+            <div class="rodape">
+                <h2>Todos os direitos reservados</h2>
+            </div><!--## RODAPE ##-->
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/Calc.js"></script>
+    </body>
+</html>

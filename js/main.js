@@ -85,17 +85,6 @@ eletroBTN.addEventListener("click", () => {
   jogosSortArrow.classList.remove("arrow-rotate");
 });
 
-// change active links
-
-const links = document.querySelectorAll(".menu ul li a");
-
-function alternateLinks() {
-  links.forEach((link) => link.classList.remove("link-visited"));
-  this.classList.add("link-visited");
-}
-
-links.forEach((item) => item.addEventListener("click", alternateLinks));
-
 // change header on scroll
 
 window.addEventListener("scroll", () => {
